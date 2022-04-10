@@ -7,14 +7,18 @@ def game_start():
     print("***************************************");
 
     secret_number = 42;
-
     guess = int(input("Type your guess number: "));
+    right_guess = (guess == secret_number);
+    higher_guess = (guess > secret_number);
 
     print("\nYour guess was: ", guess);
 
-    if (secret_number == guess):
+    if (right_guess):
         print("Congratulations! You won!");
     else:
-        print("Sorry. You miss! The right choice was: ", secret_number);
+        if (higher_guess):
+            print("Sorry. You missed! Your guess was higher than the secret number.")
+        else:
+            print("Sorry. You missed! Your guess was lower than the secret number.")
 
     print("\nEnd of the game");
