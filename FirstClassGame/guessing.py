@@ -1,9 +1,7 @@
-# Creating the game function
-
 import random;
 
 
-def game_start():
+def start():
 
     print("***************************************");
     print("**** Welcome to the guessing game! ****");
@@ -54,3 +52,6 @@ def game_start():
     print("\n****************************************");
     print("*********** End of the game! ***********");
     print("****************************************");
+
+if (__name__ == "__main__"):
+    start();
