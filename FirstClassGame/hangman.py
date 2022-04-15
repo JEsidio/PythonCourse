@@ -18,8 +18,6 @@ def start():
     won = False;
     wrong_tries = 0;
 
-    print(secret_word)
-
     print("\nThe word you'll have to guess has {} letters and you got {} tries. "
           "Good luck!\n".format(len(right_letters), number_of_tries));
 
